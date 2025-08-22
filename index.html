@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>theDeviceDr – Elevating Healthcare Innovations</title>
+  <meta name="description" content="MedTech growth blueprint: fundraising, product launch, and sales scale. 30+ years in medical devices with proven exits and revenue growth." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --navy:#0A2540; --teal:#23C9B4; --ink:#0c1623; --sky:#f4f8ff;
+      --line:#E6ECF3; --orange:#FF9E3D; --card:#0f1724; --soft:#0a2540;
+    }
+    .grid-bg{background-image:linear-gradient(to right,rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,.06) 1px,transparent 1px);background-size:22px 22px}
+    .btn-primary{background:linear-gradient(90deg,var(--teal),#69e1d2); color:#052227}
+    .btn-primary:hover{filter:brightness(1.05)}
+    .btn-ghost{border:1px solid var(--line); background:rgba(255,255,255,.06)}
+    .card{border:1px solid var(--line); border-radius:1.25rem; background:white}
+    .card-dark{border:1px solid rgba(255,255,255,.12); border-radius:1.25rem; background:rgba(255,255,255,.04)}
+    .pill{border-radius:9999px}
+    .kpi{background:white;border:1px solid var(--line);border-radius:1rem}
+    .shadow-soft{box-shadow:0 16px 50px -24px rgba(10,37,64,.45)}
+    .glow{box-shadow:0 0 0 3px rgba(35,201,180,.22)}
+    @media (prefers-reduced-motion:no-preference){.reveal{animation:reveal .5s ease both}@keyframes reveal{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}}
+  </style>
+</head>
+<body class="min-h-screen bg-[color:var(--navy)] text-white">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-[color:var(--navy)]/75 border-b border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[color:var(--teal)] text-[color:var(--navy)] font-bold">DD</span>
+        <div>
+          <p class="text-sm font-semibold">theDeviceDr</p>
+          <p class="text-[11px] text-white/60">Elevating Healthcare Innovations</p>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-3 text-sm">
+        <a href="#about" class="px-3 py-1 rounded-lg hover:bg-white/5">About</a>
+        <a href="#offerings" class="px-3 py-1 rounded-lg hover:bg-white/5">Offerings</a>
+        <a href="#results" class="px-3 py-1 rounded-lg hover:bg-white/5">Results</a>
+        <a href="#tools" class="px-3 py-1 rounded-lg hover:bg-white/5">Diagnostics</a>
+        <a href="#cta" class="px-3 py-2 rounded-lg btn-primary">Get Growth Blueprint</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero with AI Assistant -->
+  <section id="top" class="grid-bg relative overflow-hidden">
+    <div class="pointer-events-none absolute inset-0 opacity-30 bg-[radial-gradient(900px_600px_at_0%_-10%,rgba(35,201,180,.35),transparent_60%),radial-gradient(900px_600px_at_100%_-10%,rgba(255,158,61,.25),transparent_60%)]"></div>
+    <div class="mx-auto max-w-7xl px-4 pt-14 pb-10 grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+      <div class="card-dark p-6 reveal">
+        <p class="pill inline-flex items-center gap-2 px-3 py-1 bg-white/5 text-[11px] border border-white/10">🏥 MedTech Growth • 🧪 Clinical Launch • 💰 Fundraising</p>
+        <h1 class="text-3xl md:text-4xl font-bold mt-3">The Blueprint to Your Breakthrough</h1>
+        <p class="text-white/70 mt-2 text-sm">From pre-launch to acquisition, we help medical device companies accelerate commercialization: investor readiness, product management, and scalable revenue.</p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <a href="#cta" class="btn-primary px-4 py-2 rounded-xl text-sm">Get Growth Blueprint</a>
+          <a href="#tools" class="btn-ghost px-4 py-2 rounded-xl text-sm">Run Investor Readiness</a>
+        </div>
+        <ul class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <li class="kpi p-4 text-[color:var(--navy)]"><p class="text-2xl font-bold">$400M+</p><p class="text-xs text-slate-600">funded/acquired</p></li>
+          <li class="kpi p-4 text-[color:var(--navy)]"><p class="text-2xl font-bold">20+ </p><p class="text-xs text-slate-600">startups guided</p></li>
+          <li class="kpi p-4 text-[color:var(--navy)]"><p class="text-2xl font-bold">3–10×</p><p class="text-xs text-slate-600">sales growth cases</p></li>
+        </ul>
+      </div>
+
+      <div class="card-dark p-6 reveal">
+        <p class="uppercase text-[11px] tracking-wider text-white/60">theDeviceDr AI – Growth Companion</p>
+        <label for="aiPrompt" class="block text-sm mt-2">What’s the biggest challenge right now?</label>
+        <textarea id="aiPrompt" rows="4" class="mt-2 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-300" placeholder="e.g., We need to raise a seed round and land our first 10 hospital customers."></textarea>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <button class="pill px-3 py-1 border border-white/10 bg-white/5 text-xs" data-prompt="How do we prepare for medtech investors in 60 days?">Investor readiness in 60 days</button>
+          <button class="pill px-3 py-1 border border-white/10 bg-white/5 text-xs" data-prompt="How to scale device sales from $1M to $10M?">Scale $1M → $10M</button>
+          <button class="pill px-3 py-1 border border-white/10 bg-white/5 text-xs" data-prompt="Checklist to launch into hospital systems">Hospital launch checklist</button>
+        </div>
+        <div class="mt-3 flex items-center justify-between">
+          <p class="text-[12px] text-white/60">⚡ Educational, not legal/financial advice.</p>
+          <button id="askBtn" class="btn-primary px-4 py-2 rounded-xl text-sm">Ask theDeviceDr AI</button>
+        </div>
+
+        <div id="aiResult" class="hidden mt-4 space-y-3">
+          <div class="card p-4 text-[color:var(--navy)]">
+            <p class="font-semibold text-sm">Rapid POV</p>
+            <p id="pov" class="mt-1 text-sm text-slate-700"></p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div class="card p-4 text-[color:var(--navy)]">
+              <p class="font-semibold text-sm">Key Plays</p>
+              <ul id="plays" class="mt-1 list-disc list-inside text-sm text-slate-700"></ul>
+            </div>
+            <div class="card p-4 text-[color:var(--navy)]">
+              <p class="font-semibold text-sm">Next Actions (30 days)</p>
+              <ul id="actions" class="mt-1 list-disc list-inside text-sm text-slate-700"></ul>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <a href="#tools" class="btn-ghost px-3 py-2 rounded-xl text-sm">Run a Diagnostic</a>
+            <a href="#cta" class="btn-primary px-3 py-2 rounded-xl text-sm">Book Consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="mx-auto max-w-7xl px-4 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="card-dark p-6 lg:col-span-2">
+        <h2 class="text-xl font-semibold">30+ Years in Medical Devices</h2>
+        <p class="text-white/70 text-sm mt-2">Leadership across giants and startups: clinical technologies, neurovascular catheters, critical care, orthodontic materials. We build the bridge from R&D to repeatable revenue.</p>
+        <ul class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+          <li class="btn-ghost p-3 rounded-xl">10 companies funded/acquired → <span class="text-teal-300 font-semibold">$400M+</span></li>
+          <li class="btn-ghost p-3 rounded-xl">$0 → $10M and $7M → $30M growth cases</li>
+          <li class="btn-ghost p-3 rounded-xl">Clinical & commercial launch playbooks</li>
+          <li class="btn-ghost p-3 rounded-xl">Investor storytelling & data rooms</li>
+        </ul>
+      </div>
+      <div class="card-dark p-6">
+        <p class="uppercase text-[11px] text-white/60">Focus Areas</p>
+        <ul class="mt-2 space-y-2 text-sm">
+          <li>• Business Planning</li>
+          <li>• Fundraising & Investor Communications</li>
+          <li>• Product Mgmt (Upstream & Downstream)</li>
+          <li>• Sales Planning & Success</li>
+        </ul>
+        <a href="#offerings" class="mt-4 inline-flex items-center btn-primary px-4 py-2 rounded-xl text-sm">Explore Offerings</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings -->
+  <section id="offerings" class="mx-auto max-w-7xl px-4 pb-10">
+    <h2 class="text-xl font-semibold mb-4">What We Deliver</h2>
+    <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-4">
+      <div class="card-dark p-5">
+        <h3 class="font-semibold">Business Planning</h3>
+        <p class="text-sm text-white/70 mt-1">Market sizing, ICP, milestones, and a fundable operating plan.</p>
+      </div>
+      <div class="card-dark p-5">
+        <h3 class="font-semibold">Fundraising & Investor Comms</h3>
+        <p class="text-sm text-white/70 mt-1">Decks that align clinical value with a compelling business case.</p>
+      </div>
+      <div class="card-dark p-5">
+        <h3 class="font-semibold">Product Management</h3>
+        <p class="text-sm text-white/70 mt-1">Upstream research → downstream launch, KOLs, adoption.</p>
+      </div>
+      <div class="card-dark p-5">
+        <h3 class="font-semibold">Sales Planning & Success</h3>
+        <p class="text-sm text-white/70 mt-1">Territory design, hiring, enablement, pipeline, and dashboards.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results & Testimonials -->
+  <section id="results" class="mx-auto max-w-7xl px-4 pb-10">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="card-dark p-6 lg:col-span-2">
+        <h2 class="text-xl font-semibold">Results & Impact</h2>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div class="kpi p-4 text-[color:var(--navy)]"><p class="text-2xl font-bold">$0→$10M</p><p class="text-xs text-slate-600">device revenue ramp</p></div>
+          <div class="kpi p-4 text-[color:var(--navy)]"><p class="text-2xl font-bold">$7M→$30M</p><p class="text-xs text-slate-600">scale program</p></div>
+          <div class="kpi p-4 text-[color:var(--navy)]"><p class="text-2xl font-bold">$4.5M→$45M</p><p class="text-xs text-slate-600">portfolio growth</p></div>
+        </div>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li class="btn-ghost p-3 rounded-xl">Orthopedics launch: KOL engagement → 1st 10 hospital customers</li>
+          <li class="btn-ghost p-3 rounded-xl">Neurovascular catheter: clinical validation to distributor scale</li>
+          <li class="btn-ghost p-3 rounded-xl">Critical care: pricing & contracting strategy for margin lift</li>
+        </ul>
+      </div>
+      <div class="card-dark p-6">
+        <h3 class="font-semibold">What Clients Say</h3>
+        <blockquote class="mt-2 text-sm text-white/80">“Tom translates complexity into a clear, executable plan. Fundraising and sales both accelerated.” — CEO, MedTech startup</blockquote>
+        <blockquote class="mt-3 text-sm text-white/80">“His go-to-market blueprint and investor messaging helped us cross the chasm.” — VP Product, Device company</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Tools / Diagnostics -->
+  <section id="tools" class="mx-auto max-w-7xl px-4 pb-12">
+    <h2 class="text-xl font-semibold mb-3">Run a Quick Diagnostic</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <!-- Investor Readiness -->
+      <div class="card-dark p-6">
+        <p class="font-semibold">Investor Readiness Score</p>
+        <p class="text-sm text-white/70">Rate each area 1–5.</p>
+        <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+          <div>
+            <label class="block">Clinical Evidence</label>
+            <input type="range" min="1" max="5" value="3" id="ir-evidence" class="w-full accent-teal-400" />
+          </div>
+          <div>
+            <label class="block">Market & ICP</label>
+            <input type="range" min="1" max="5" value="3" id="ir-market" class="w-full accent-teal-400" />
+          </div>
+          <div>
+            <label class="block">Business Model</label>
+            <input type="range" min="1" max="5" value="3" id="ir-model" class="w-full accent-teal-400" />
+          </div>
+          <div>
+            <label class="block">Go-to-Market Plan</label>
+            <input type="range" min="1" max="5" value="3" id="ir-gtm" class="w-full accent-teal-400" />
+          </div>
+          <div>
+            <label class="block">Team & Talent</label>
+            <input type="range" min="1" max="5" value="3" id="ir-team" class="w-full accent-teal-400" />
+          </div>
+        </div>
+        <div class="mt-3 flex items-center justify-between">
+          <p class="text-white/70 text-xs">Anonymous, local-only calculation.</p>
+          <button id="irRun" class="btn-primary px-4 py-2 rounded-xl text-sm">Calculate Score</button>
+        </div>
+        <div id="irResult" class="hidden mt-3 card p-4 text-[color:var(--navy)]">
+          <p class="text-sm"><span class="font-semibold">Score:</span> <span id="irVal"></span> / 25</p>
+          <p id="irAdvice" class="text-sm text-slate-700 mt-1"></p>
+        </div>
+      </div>
+
+      <!-- Sales Growth Diagnostic -->
+      <div class="card-dark p-6">
+        <p class="font-semibold">Sales Growth Diagnostic</p>
+        <p class="text-sm text-white/70">Enter a few numbers (optional, local-only).</p>
+        <div class="mt-3 grid grid-cols-2 gap-3 text-sm">
+          <div><label class="block">ARR (current, $M)</label><input id="sg-arr" type="number" step="0.1" class="w-full rounded-md border border-white/10 bg-white/5 px-3 py-2" placeholder="1.0" /></div>
+          <div><label class="block">Win Rate (%)</label><input id="sg-win" type="number" step="1" class="w-full rounded-md border border-white/10 bg-white/5 px-3 py-2" placeholder="20" /></div>
+          <div><label class="block">Avg Deal ($k)</label><input id="sg-deal" type="number" step="1" class="w-full rounded-md border border-white/10 bg-white/5 px-3 py-2" placeholder="75" /></div>
+          <div><label class="block">Cycle (months)</label><input id="sg-cycle" type="number" step="0.1" class="w-full rounded-md border border-white/10 bg-white/5 px-3 py-2" placeholder="4" /></div>
+        </div>
+        <div class="mt-3 flex items-center justify-between">
+          <p class="text-white/70 text-xs">We compute rough levers to reach your target.</p>
+          <button id="sgRun" class="btn-primary px-4 py-2 rounded-xl text-sm">Estimate Path</button>
+        </div>
+        <div id="sgResult" class="hidden mt-3 card p-4 text-[color:var(--navy)]">
+          <p class="text-sm font-semibold">Scale Path</p>
+          <ul id="sgList" class="text-sm text-slate-700 list-disc list-inside mt-1"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="cta" class="mx-auto max-w-7xl px-4 pb-16">
+    <div class="rounded-2xl p-6 bg-white/5 border border-white/10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+        <div class="md:col-span-2">
+          <p class="text-2xl font-semibold">Let’s build your breakthrough.</p>
+          <p class="text-sm text-white/70 mt-1">Put 30 years of medtech growth to work for your company.</p>
+        </div>
+        <div class="flex gap-2 md:justify-end">
+          <a href="mailto:hello@thedevicedr.com?subject=Growth%20Blueprint%20Request" class="btn-primary px-5 py-3 rounded-xl text-sm">Book Consultation</a>
+          <a href="#top" class="btn-ghost px-5 py-3 rounded-xl text-sm">Get Growth Blueprint</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-8 text-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div>
+        <p class="font-semibold">theDeviceDr</p>
+        <p class="text-white/60 text-xs">Educational guidance, not legal/financial advice.</p>
+      </div>
+      <div class="text-white/70 text-xs">
+        <a href="#" class="hover:underline">LinkedIn</a> ·
+        <a href="#" class="hover:underline">Email</a>
+      </div>
+      <p class="text-white/50 text-[11px]">© 2025 theDeviceDr. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Minimal JS: AI mock + diagnostics -->
+  <script>
+    // ---- AI Helper (mock; replace with your endpoint) ----
+    const promptEl = document.getElementById('aiPrompt');
+    const askBtn = document.getElementById('askBtn');
+    const aiResult = document.getElementById('aiResult');
+    const povEl = document.getElementById('pov');
+    const playsEl = document.getElementById('plays');
+    const actionsEl = document.getElementById('actions');
+
+    document.querySelectorAll('[data-prompt]').forEach(b=>{
+      b.addEventListener('click',()=>{ promptEl.value=b.dataset.prompt; promptEl.focus(); });
+    });
+
+    askBtn.addEventListener('click', async () => {
+      const q = promptEl.value.trim();
+      if(!q){ alert('Share a sentence or use a starter.'); return; }
+      // MOCK response; swap with fetch('/api/devicedr-ai', {...})
+      const resp = {
+        pov: "Anchor investors with clinical credibility and a de-risked plan: clear ICP, staged evidence, and a repeatable path to first ten hospital customers.",
+        plays: [
+          "Define ICP and value props by role: clinician, materials manager, and finance.",
+          "Map evidence & trials to milestones investors care about (safety → outcomes).",
+          "KOL advisory + lighthouse sites for early adoption.",
+          "Design GTM: territories, partner mix, and onboarding playbook."
+        ],
+        actions: [
+          "Build 12-slide investor deck + 18-month operating milestones.",
+          "Create 30/60/90-day launch checklist and 10-hospital pipeline."
+        ]
+      };
+      povEl.textContent = resp.pov;
+      playsEl.innerHTML = resp.plays.map(x=>`<li>• ${x}</li>`).join('');
+      actionsEl.innerHTML = resp.actions.map(x=>`<li>• ${x}</li>`).join('');
+      aiResult.classList.remove('hidden');
+      aiResult.scrollIntoView({behavior:'smooth', block:'nearest'});
+    });
+
+    // ---- Investor Readiness ----
+    document.getElementById('irRun').addEventListener('click', () => {
+      const sum = ['ir-evidence','ir-market','ir-model','ir-gtm','ir-team']
+        .map(id=>+document.getElementById(id).value||3)
+        .reduce((a,b)=>a+b,0);
+      const advice =
+        sum >= 20 ? "Strong story. Tighten data room and schedule investor meetings." :
+        sum >= 15 ? "Close gaps: sharpen ICP, align milestones, and add 1–2 KOL letters." :
+        "Focus on clinical signal, market proof, and a lean 12-month plan before fundraising.";
+      document.getElementById('irVal').textContent = String(sum);
+      document.getElementById('irAdvice').textContent = advice;
+      document.getElementById('irResult').classList.remove('hidden');
+    });
+
+    // ---- Sales Growth Diagnostic ----
+    document.getElementById('sgRun').addEventListener('click', () => {
+      const arr = +document.getElementById('sg-arr').value || 1.0;
+      const win = (+document.getElementById('sg-win').value || 20)/100;
+      const deal = (+document.getElementById('sg-deal').value || 75) * 1000;
+      const cycle = +document.getElementById('sg-cycle').value || 4;
+      const target = arr*2; // simple “double” target
+      const neededARR = target - arr;
+      const dealsPerMonth = Math.max(1, Math.round((neededARR*1_000_000)/(deal*(12/cycle))));
+      const pipeMultiple = 1/win;
+      const bullets = [
+        `Target ARR: ~$${target.toFixed(1)}M; need +$${neededARR.toFixed(1)}M.`,
+        `With avg deal ~$${(deal/1000).toFixed(0)}k and ${cycle}-mo cycles → ~${dealsPerMonth} new wins/month.`,
+        `Maintain pipeline ≈ ${Math.ceil(dealsPerMonth*pipeMultiple)} qualified opps/month.`,
+        "Enablement: proof kit (outcomes, ROI), MEDDICC discipline, and weekly KOL touchpoints."
+      ];
+      const list = document.getElementById('sgList');
+      list.innerHTML = bullets.map(x=>`<li>${x}</li>`).join('');
+      document.getElementById('sgResult').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
